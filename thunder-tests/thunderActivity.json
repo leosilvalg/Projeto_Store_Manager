@@ -92,9 +92,33 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-08-22T21:48:06.645Z",
-    "modified": "2022-08-22T21:48:20.128Z",
+    "modified": "2022-08-22T22:44:44.704Z",
     "headers": [],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Relógio\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ef76d1cc-5867-4b4d-8b4e-dad6d4e384ea",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/products",
+    "url": "localhost:3000/products",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-08-22T22:44:37.599Z",
+    "modified": "2022-08-22T22:44:37.690Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Relógio\"\n}",
+      "form": []
+    },
     "tests": []
   }
 ]
