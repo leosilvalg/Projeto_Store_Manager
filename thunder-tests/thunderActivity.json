@@ -92,7 +92,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-08-22T21:48:06.645Z",
-    "modified": "2022-08-22T22:44:44.704Z",
+    "modified": "2022-08-23T00:39:09.997Z",
     "headers": [],
     "params": [],
     "body": {
@@ -112,6 +112,120 @@
     "sortNum": 0,
     "created": "2022-08-22T22:44:37.599Z",
     "modified": "2022-08-22T22:44:37.690Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Relógio\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "9e749e5a-d386-4e2c-89bf-9bd4b48bfa3b",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/sales",
+    "url": "localhost:3000/sales",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-08-23T00:30:17.736Z",
+    "modified": "2022-08-23T01:11:27.334Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Relógio\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2e887fbe-7c34-4cf9-a54e-312880f20765",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/sales/1",
+    "url": "localhost:3000/sales/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-08-23T01:11:35.093Z",
+    "modified": "2022-08-23T01:11:35.133Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Relógio\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e8fe4da0-867b-4231-8f5e-6555569b8c86",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/sales/2",
+    "url": "localhost:3000/sales/2",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-08-23T01:11:40.486Z",
+    "modified": "2022-08-23T01:12:03.616Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Relógio\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "7d0bf50f-b762-4f66-8c87-84d86210aba5",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/sales/4",
+    "url": "localhost:3000/sales/4",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-08-23T01:11:56.971Z",
+    "modified": "2022-08-23T01:11:56.987Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Relógio\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "7adccb1b-d347-47f8-ba02-3adb75df00fb",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/sales/3",
+    "url": "localhost:3000/sales/3",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-08-23T01:12:00.312Z",
+    "modified": "2022-08-23T01:12:00.334Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Relógio\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "63f989eb-d484-4719-8556-018519dbb26f",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/sales/",
+    "url": "localhost:3000/sales/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-08-23T01:14:45.632Z",
+    "modified": "2022-08-23T01:15:12.315Z",
     "headers": [],
     "params": [],
     "body": {
