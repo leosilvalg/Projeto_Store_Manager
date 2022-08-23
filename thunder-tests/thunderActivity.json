@@ -92,7 +92,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-08-22T21:48:06.645Z",
-    "modified": "2022-08-23T00:39:09.997Z",
+    "modified": "2022-08-23T01:23:42.930Z",
     "headers": [],
     "params": [],
     "body": {
@@ -231,6 +231,82 @@
     "body": {
       "type": "json",
       "raw": "{\n  \"name\": \"Relógio\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "cd0dbb9e-4020-4b63-a74b-ff22d6128188",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/products/1",
+    "url": "localhost:3000/products/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-08-23T01:23:49.402Z",
+    "modified": "2022-08-23T01:29:25.171Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\": 1,\n  \"name\": \"MArtelo do BAt\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "f2ffb78a-af4f-45e1-833f-38e6ccbb2d78",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/products/1",
+    "url": "localhost:3000/products/1",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-08-23T01:24:10.923Z",
+    "modified": "2022-08-23T01:28:53.494Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\": 1,\n  \"name\": \"MArtelo do BAt\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "b14df26a-128d-4407-9240-c1eee50eac80",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/products/",
+    "url": "localhost:3000/products/",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-08-23T01:24:16.233Z",
+    "modified": "2022-08-23T01:24:25.151Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\": 1,\n  \"name\": \"MArtelo do BAt\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "81a86507-cc8b-4235-a308-3016f4a2579a",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/products/",
+    "url": "localhost:3000/products/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-08-23T01:24:29.644Z",
+    "modified": "2022-08-23T01:28:59.173Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\": 1,\n  \"name\": \"MArtelo do BAt\"\n}",
       "form": []
     },
     "tests": []
