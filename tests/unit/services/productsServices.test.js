@@ -75,7 +75,7 @@ describe('Testando o arquivo product_service.js', () => {
         const response = await product_service.create({ name: 'Martelo do Batman' });
 
       expect(response).to.be.an('object');
-      expect(response).to.include.all.keys('id', 'name');
+      expect(response).to.include.all.keys('name');
       expect(response).to.be.not.empty;
       });
     });
@@ -84,7 +84,9 @@ describe('Testando o arquivo product_service.js', () => {
   describe('Teste da função update', async () => {
 
     before(async () => {
-      sinon.stub(product_model, 'updateProduct').resolves(1);
+      sinon.stub(product_model, 'getById').resolves(1);
+      sinon.stub(product_model, 'updateProduct').resolves({ id:1, name: 'Martelo do Capitão América' });
+
     });
 
     after(async () => {
@@ -106,7 +108,7 @@ describe('Testando o arquivo product_service.js', () => {
   describe('Teste da função delete', async () => {
 
     before(async () => {
-      sinon.stub(product_model, 'deleteProduct').resolves();
+      sinon.stub(product_model, 'deleteProduct').resolves(1);
     });
 
     after(async () => {
