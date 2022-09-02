@@ -1,5 +1,7 @@
 const productService = require('../services/product_service');
 
+const NOT_FOUND = 'Product not found';
+
 const getAll = async (req, res) => {
   const allProducts = await productService.getAll();
 
@@ -12,7 +14,7 @@ const getById = async (req, res) => {
     const product = await productService.getById(id);
 
     if (!product) {
-      return res.status(404).json({ message: 'Product not found' });
+      return res.status(404).json({ message: NOT_FOUND });
     }
 
     res.status(200).json(product);
@@ -27,7 +29,7 @@ const create = async (req, res) => {
     const product = await productService.create(name);
 
     if (!product) {
-      return res.status(404).json({ message: 'Product not found' });
+      return res.status(404).json({ message: NOT_FOUND });
     }
 
     res.status(201).json(product);
@@ -43,7 +45,7 @@ const update = async (req, res) => {
     const product = await productService.update(id, name);
 
     if (!product) {
-      return res.status(404).json({ message: 'Product not found' });
+      return res.status(404).json({ message: NOT_FOUND });
     }
 
     res.status(200).json(product);
@@ -58,10 +60,31 @@ const deleted = async (req, res) => {
     const product = await productService.deleted(id);
 
     if (!product) {
-      return res.status(404).json({ message: 'Product not found' });
+      return res.status(404).json({ message: NOT_FOUND });
     }
 
     res.status(204).end();
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+const search = async (req, res) => {
+  try {
+    const { q } = req.query;
+
+    if (!q) {
+      const allProducts = await productService.getAll();
+      return res.status(200).json(allProducts);
+    }
+    
+    const product = await productService.search(q);
+
+    if (!product) {
+      return res.status(404).json({ message: NOT_FOUND });
+    }
+
+    return res.status(200).json(product);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
@@ -73,4 +96,5 @@ module.exports = {
   create,
   update,
   deleted,
+  search,
 };

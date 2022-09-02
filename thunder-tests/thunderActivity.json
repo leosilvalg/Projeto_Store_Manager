@@ -319,5 +319,106 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "8afd3f2a-5acc-4c58-b250-457fe5c56be9",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost3000/products/search?q=Martelo",
+    "url": "localhost3000/products/search?q=Martelo",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-09-01T23:43:14.331Z",
+    "modified": "2022-09-01T23:43:15.483Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "q",
+        "value": "Martelo",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "d56c1f2e-8275-4546-ad65-a8ca30175c94",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/products/search?q=Martelo",
+    "url": "localhost:3000/products/search?q=Martelo",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-09-01T23:43:30.160Z",
+    "modified": "2022-09-02T12:33:32.515Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "q",
+        "value": "Martelo",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "55134b30-5d75-4af1-9ed2-acd1798ba246",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/products/search?q=Thor",
+    "url": "localhost:3000/products/search?q=Thor",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-09-01T23:45:00.732Z",
+    "modified": "2022-09-02T12:15:14.582Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "q",
+        "value": "Thor",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "aa40fcaf-8185-427c-b6b0-126c0512c6b8",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/products/search",
+    "url": "localhost:3000/products/search",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-09-02T12:11:40.474Z",
+    "modified": "2022-09-02T12:33:34.919Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "q",
+        "value": "Martelo",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "6299314a-db82-4c43-a0d9-9ef5da1fe14d",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/products/search?q=Capitao",
+    "url": "localhost:3000/products/search?q=Capitao",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-09-02T12:15:21.536Z",
+    "modified": "2022-09-02T12:31:12.920Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "q",
+        "value": "Capitao",
+        "isPath": false
+      }
+    ],
+    "tests": []
   }
 ]

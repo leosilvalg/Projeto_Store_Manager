@@ -38,10 +38,19 @@ const deleted = async (id) => {
   return product;
 };
 
+const search = async (name) => {
+  const product = await productModel.search(name);
+
+  if (!product || product.length === 0) return null;
+
+  return product;
+};
+
 module.exports = {
   getAll,
   getById,
   create,
   update,
   deleted,
+  search,
 };

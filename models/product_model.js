@@ -42,10 +42,19 @@ const deleteProduct = async (id) => {
   return id;
 };
 
+const search = async (name) => {
+  const [productData] = await connection.execute(
+    'SELECT name FROM StoreManager.products WHERE name LIKE ?', [`%${name}%`],
+  );
+  
+  return productData;
+};
+
 module.exports = {
   getAll,
   getById,
   createProduct,
   updateProduct,
   deleteProduct,
+  search,
 };
