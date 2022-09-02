@@ -10,6 +10,13 @@ const getById = async (id) => {
   return product;
 };
 
+const search = async (name) => {
+  if (!name) return getAll();
+  const products = await productModel.search(name);
+  if (!products) return { code: 200, data: [] };
+  return { code: 200, data: products };
+};
+
 const create = async (name) => {
   const product = await productModel.createProduct({ name });
 
@@ -34,14 +41,6 @@ const deleted = async (id) => {
   if (!productId) return null;
 
   const product = await productModel.deleteProduct(id);
-
-  return product;
-};
-
-const search = async (name) => {
-  const product = await productModel.search(name);
-
-  if (!product || product.length === 0) return null;
 
   return product;
 };

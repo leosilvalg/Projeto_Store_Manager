@@ -23,6 +23,23 @@ const getById = async (req, res) => {
   }
 };
 
+const search = async (req, res) => {
+  const { q } = req.query;
+  const allProducts = await productService.getAll();
+
+  if (!q) {
+    return res.status(200).json(allProducts);
+  }
+    
+  const product = await productService.search(q);
+
+  if (product.error) {
+    return res.status(404).json({ message: NOT_FOUND });
+  }
+
+  return res.status(200).json(product.data);
+};
+
 const create = async (req, res) => {
   try {
     const { name } = req.body;
@@ -64,27 +81,6 @@ const deleted = async (req, res) => {
     }
 
     res.status(204).end();
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-};
-
-const search = async (req, res) => {
-  try {
-    const { q } = req.query;
-
-    if (!q) {
-      const allProducts = await productService.getAll();
-      return res.status(200).json(allProducts);
-    }
-    
-    const product = await productService.search(q);
-
-    if (!product) {
-      return res.status(404).json({ message: NOT_FOUND });
-    }
-
-    return res.status(200).json(product);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }

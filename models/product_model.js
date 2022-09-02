@@ -18,6 +18,13 @@ const getById = async (id) => {
   return productData[0];
 };
 
+const search = async (name) => {
+  const query = 'SELECT id, name FROM StoreManager.products WHERE name LIKE ?;';
+  const [rows] = await connection.execute(query, [`%${name}%`]);
+  if (!rows || rows.length === 0) return null;
+  return rows;
+};
+
 const createProduct = async ({ name }) => {
   const [productData] = await connection.execute(
     'INSERT INTO StoreManager.products (name) VALUES (?)', [name],
@@ -40,14 +47,6 @@ const deleteProduct = async (id) => {
   );
 
   return id;
-};
-
-const search = async (name) => {
-  const [productData] = await connection.execute(
-    'SELECT name FROM StoreManager.products WHERE name LIKE ?', [`%${name}%`],
-  );
-  
-  return productData;
 };
 
 module.exports = {
